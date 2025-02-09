@@ -32,14 +32,12 @@ body {
     font-weight: bold;
 }
 
-/* "Your Bookmarks" heading styling (displayed only when bookmarks exist) */
 .your-bookmarks-heading {
     font-size: 2rem;
     margin-top: 40px;
     color: white;
 }
 
-/* Filter container styling */
 .filter-container {
     margin: 20px auto;
     display: flex;

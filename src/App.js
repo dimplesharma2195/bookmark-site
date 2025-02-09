@@ -46,10 +46,8 @@ function App() {
     closeModal();
   };
 
-  // Compute unique categories from bookmarks and add the "All" option
   const categories = ["All", ...Array.from(new Set(bookmarks.map((b) => b.category)))];
 
-  // Filter bookmarks based on the selected category
   const filteredBookmarks =
     selectedCategory === "All"
       ? bookmarks
@@ -62,7 +60,6 @@ function App() {
         Add New
       </button>
 
-      {/* Only show "Your Bookmarks" heading and filter if there is at least one bookmark */}
       {bookmarks.length > 0 && (
         <>
           <h2 className="your-bookmarks-heading">Your Bookmarks</h2>
